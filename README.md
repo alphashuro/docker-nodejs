@@ -1,3 +1,8 @@
+*Disclaimer*
+
+*I forked this from [the image heroku uses](https://hub.docker.com/r/heroku/nodejs/) because they do not seem to have any intention to support different versions of node.*
+*It uses the same version of node they use by default, but you can use a build arg to specify your version of node. See [this section](#hacking)*
+
 # Heroku Node.js Docker Image
 
 This image is for use with the [Heroku Docker CLI plugin](https://github.com/heroku/heroku-docker).
@@ -56,15 +61,6 @@ $ open "http://$(boot2docker ip):8080"
 
 ## Hacking
 
-To test changes locally, you can edit this image and rebuild it,
-replacing the `heroku/node` image on your machine:
-
 ```
-docker build -t heroku/node .
-```
-
-To return to the official image:
-
-```
-docker pull heroku/node
+docker build -t alphashuro/heroku-node --build-arg NODE_ENGINE=6.1.0 .
 ```
