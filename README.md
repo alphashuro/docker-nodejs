@@ -1,5 +1,7 @@
 # Heroku Node.js Docker Image
 
+*v6.1.0*
+
 This image is for use with the [Heroku Docker CLI plugin](https://github.com/heroku/heroku-docker).
 
 ## Usage
