@@ -5,7 +5,7 @@ FROM heroku/cedar:14
 ENV PORT 3000
 
 # Which version of node?
-ARG NODE_ENGINE=0.12.2
+ARG NODE_ENGINE=6.1.0
 ENV NODE_ENGINE ${NODE_ENGINE}
 
 # Locate our binaries
